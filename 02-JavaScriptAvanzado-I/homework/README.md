@@ -75,7 +75,7 @@ console.log(pm); //Franco
 ¿Cuál crees que será el resultado de la ejecución de estas operaciones?:
 
 ```javascript
-6 / "3" //2
+6 / "3" //2 
 "2" * "3" //222
 4 + 5 + "px" //9px
 "$" + 4 + 5 //$45
@@ -127,7 +127,7 @@ function getFood(food) {
     return snack;
 }
 
-getFood(false);
+getFood(false); //undefined
 ```
 
 
@@ -147,11 +147,11 @@ var obj = {
    }
 };
 
-console.log(obj.prop.getFullname());
+console.log(obj.prop.getFullname()); //Aurelio de Rosa
 
-var test = obj.prop.getFullname;
+var test = obj.prop.getFullname; 
 
-console.log(test());
+console.log(test());//undefined
 ```
 
 ### Event loop
@@ -166,5 +166,5 @@ function printing() {
    console.log(4);
 }
 
-printing();
+printing(); // 1,4,3,2
 ```
