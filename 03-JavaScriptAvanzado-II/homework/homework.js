@@ -24,7 +24,7 @@ function counter() {
         arreglo++;
         return arreglo;
     }
-}
+} //clousures es una funcion que retorna otra funcion
 
 var otroContador = counter();
 otroContador();
@@ -53,7 +53,7 @@ function cacheFunction(cb) {
     */
     var obj = {}
     return function(arg) {
-        if (obj.hasOwnProperty(arg)) {
+        if (obj.hasOwnProperty(arg)) { // if(obj[arg]) <---- Asi es mejor
             return obj[arg];
         } else {
             obj[arg] = cb(arg);
