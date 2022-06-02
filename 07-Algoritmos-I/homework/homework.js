@@ -62,7 +62,6 @@ function selectionSort(array) {
     // Devolver el array ordenado resultante
     // Tu código: [3,2,20,15,5]
     for (let i = 0; i < array.length; i++) { //i=2
-        // Finding the smallest number in the subarray
         let min = i; //0, 1, 2
         for (let j = i + 1; j < array.length; j++) { //j=1, 2, 3
             if (array[j] < array[min]) { //2<3 20<3 15<20
@@ -70,7 +69,6 @@ function selectionSort(array) {
             }
         }
         if (min != i) {
-            // Swapping the elements
             let tmp = array[i]; //2 20
             array[i] = array[min]; //3 15
             array[min] = tmp; //2 20
